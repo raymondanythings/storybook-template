@@ -1,0 +1,51 @@
+/* ===========================
+--- Font
+============================ */
+@font-face {
+	font-family: 'october9_1';
+	src: url('october9_1.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'october9_2';
+	src: url(october9_2.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'october9_3';
+	src: url(october9_3.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'october9_4';
+	src: url(october9_4.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Montserrat_Bold';
+	src: url(Montserrat_Bold.otf) format('truetype');
+}
+@font-face {
+	font-family: 'Dreamgothic_2';
+	src: url(Dreamgothic_2.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Dreamgothic_3';
+	src: url(Dreamgothic_3.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Dreamgothic_5';
+	src: url(Dreamgothic_5.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'rise_M';
+	src: url(rise_M.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'SeoulHanRiver_L';
+	src: url(SeoulHanRiver_L.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'pinetreeL';
+	src: url(pinetreeL.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'smile_B.ttf';
+	src: url(smile_B.ttf) format('truetype');
+}

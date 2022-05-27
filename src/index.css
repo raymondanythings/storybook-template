@@ -1,0 +1,25 @@
+@import './font/font.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components {
+	.icon-sm {
+		@apply inline-block w-[20px] h-[20px] align-middle bg-[url(https://studymoa.me/images/ico_24_brown.png)];
+		background-size: 200px;
+	}
+	.text-label {
+		@apply text-[#5f733d];
+	}
+
+	.form-wrap {
+		@apply flex flex-col w-full;
+	}
+	.form-input {
+		@apply font-sans placeholder-shown:border-gray-400 placeholder-shown:border border-2  border-greenText rounded-md px-4 py-2 text-[15px] focus:outline-none focus:ring-1 focus:ring-greenText  transition;
+	}
+}
+* {
+	font-family: 'october9_3';
+}
