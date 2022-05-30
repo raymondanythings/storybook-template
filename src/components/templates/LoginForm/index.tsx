@@ -20,14 +20,14 @@ const LoginForm = () => {
 		register,
 		handleSubmit,
 		formState: { errors }
-	} = useForm<ILoginFormData>({ shouldUseNativeValidation: true, mode: 'onBlur', reValidateMode: 'onBlur' })
+	} = useForm<ILoginFormData>({ mode: 'onBlur', reValidateMode: 'onBlur' })
 	const [notValid, setNotValid] = useState('')
 	const navigation = useNavigate()
 
 	const onValid = (data: ILoginFormData) => {
 		const { phone, username } = data
 		if (phone + '' === userData.phone && username === userData.username) {
-			navigation('/pay')
+			navigation('/pay', { state: { user: username } })
 		} else {
 			setNotValid('유저가 존재하지 않습니다.')
 		}

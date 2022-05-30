@@ -4,7 +4,7 @@ import { UseFormRegisterReturn } from 'react-hook-form'
 export interface LoginInputProps {
 	placeholder?: string
 	inputType?: HTMLInputTypeAttribute
-	register: UseFormRegisterReturn
+	register?: UseFormRegisterReturn
 }
 
 const LoginInput: React.FC<LoginInputProps> = ({ placeholder, inputType = 'text', register, ...rest }) => {

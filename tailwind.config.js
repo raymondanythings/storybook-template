@@ -3,7 +3,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				greenText: '#94bc32'
+				greenText: '#94bc32',
+				greenSemi: '#5f733d'
 			}
 		}
 	},

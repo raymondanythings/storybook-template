@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 
-interface SubmitButtonProps {
+interface SubmitButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	text?: string
 }
 
-const SubmitButton: React.FC<SubmitButtonProps> = ({ text }) => {
-	return <button className="w-full px-[28px] py-[16px] bg-greenText rounded-[3rem] text-white ">{text}</button>
+const SubmitButton: React.FC<SubmitButtonProps> = ({ text, ...rest }) => {
+	return (
+		<button className="w-full keep-all px-[28px] py-[16px] bg-greenText rounded-[3rem] text-white " {...rest}>
+			{text}
+		</button>
+	)
 }
 
 export default SubmitButton

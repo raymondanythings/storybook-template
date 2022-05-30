@@ -5,21 +5,54 @@
 @tailwind variants;
 
 @layer components {
+	.icon {
+		@apply inline-block  align-middle bg-[url(https://studymoa.me/images/ico_24_brown.png)] mr-1 group-hover:bg-[url(http://studymoa.me/images/ico_24_white.png)];
+	}
+	.icon-white {
+		@apply inline-block  align-middle bg-[url(http://studymoa.me/images/ico_24_white.png)] mr-1;
+	}
 	.icon-sm {
-		@apply inline-block w-[20px] h-[20px] align-middle bg-[url(https://studymoa.me/images/ico_24_brown.png)];
+		@apply icon;
+		@apply w-[16px] h-[16px];
+		background-size: 160px;
+	}
+	.icon-md {
+		@apply icon;
+		@apply w-[20px] h-[20px];
 		background-size: 200px;
+	}
+	.icon-active {
+		@apply icon-white;
+		@apply w-[16px] h-[16px];
+		background-size: 160px;
 	}
 	.text-label {
 		@apply text-[#5f733d];
 	}
-
 	.form-wrap {
 		@apply flex flex-col w-full;
 	}
 	.form-input {
 		@apply font-sans placeholder-shown:border-gray-400 placeholder-shown:border border-2  border-greenText rounded-md px-4 py-2 text-[15px] focus:outline-none focus:ring-1 focus:ring-greenText  transition;
 	}
+	.pay-button {
+		@apply p-[14px]  text-greenSemi rounded-[6px] border text-[17px] font-['pinetreeL'] hover:bg-greenText transition;
+	}
 }
+
+@layer utilities {
+	.keep-all {
+		word-break: keep-all;
+	}
+}
+
 * {
 	font-family: 'october9_3';
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
