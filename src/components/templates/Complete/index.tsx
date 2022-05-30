@@ -2,11 +2,13 @@ import SubmitButton from 'components/atom/SubmitButton'
 import Title from 'components/atom/Title'
 import React, { useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-
-const Complete = () => {
+interface CompleteProps {
+	charge?: boolean
+}
+const Complete = ({ charge }: CompleteProps) => {
 	const location = useLocation() as { state: { charge: boolean } }
 	const navigation = useNavigate()
-	const [ok] = useState(location?.state?.charge)
+	const [ok] = useState(charge ?? location?.state?.charge)
 
 	const handleClick = () => {
 		navigation('/')
