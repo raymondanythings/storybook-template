@@ -1,6 +1,6 @@
 import SubmitButton from 'components/atom/SubmitButton'
 import Title from 'components/atom/Title'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 interface CompleteProps {
 	charge?: boolean
@@ -8,16 +8,19 @@ interface CompleteProps {
 const Complete = ({ charge }: CompleteProps) => {
 	const location = useLocation() as { state: { charge: boolean } }
 	const navigation = useNavigate()
-	const [ok] = useState(charge ?? location?.state?.charge)
+	const [ok, setOk] = useState(charge ?? location?.state?.charge)
 
 	const handleClick = () => {
 		navigation('/')
 	}
+	useEffect(() => {
+		charge && setOk(charge)
+	}, [charge, ok])
 
 	return (
 		<>
 			<Title>스터디모아 결재</Title>
-			{ok ? (
+			{charge ? (
 				<>
 					<p className="text-center">결제에 성공하였습니다.</p>
 				</>

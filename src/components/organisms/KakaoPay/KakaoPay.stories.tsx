@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Component from '.'
 import { withRouter } from 'storybook-addon-react-router-v6'
 export default {
-	title: 'Organisms/KakaoPay',
+	title: 'Design System/Organisms/KakaoPay',
 	component: Component,
 	decorators: [withRouter],
 	args: {}

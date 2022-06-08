@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import LoginInput from '.'
 
 export default {
-	title: 'Atoms/LoginInput',
+	title: 'Design System/Atoms/LoginInput',
 	component: LoginInput,
 	args: {
 		inputType: 'text',

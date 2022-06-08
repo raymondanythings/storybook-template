@@ -5,7 +5,7 @@ import { useArgs } from '@storybook/client-api'
 import Component from '.'
 
 export default {
-	title: 'Organisms/CustomPopup',
+	title: 'Design System/Organisms/CustomPopup',
 	component: Component,
 	args: {
 		toggle: false,

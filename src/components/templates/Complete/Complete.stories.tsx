@@ -20,9 +20,7 @@ export default {
 	}
 } as ComponentMeta<typeof Component>
 
-export const Complete: ComponentStory<typeof Component> = (args) => {
-	return <Component {...args} />
-}
+export const Complete: ComponentStory<typeof Component> = (args) => <Component {...args} />
 
 Complete.story = {
 	parameters: {

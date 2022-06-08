@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import FormLabel from '.'
 
 export default {
-	title: 'Atoms/FormLabel',
+	title: 'Design System/Atoms/FormLabel',
 	component: FormLabel,
 	args: {
 		children: '버튼입니다'

@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Button from '.'
 
 export default {
-	title: 'Atoms/Button',
+	title: 'Design System/Atoms/Button',
 	component: Button,
 	args: {
 		children: '버튼입니다'

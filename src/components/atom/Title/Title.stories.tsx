@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Component from '.'
 
 export default {
-	title: 'Atoms/Title',
+	title: 'Design System/Atoms/Title',
 	component: Component,
 	args: {
 		children: '타이틀입니다'

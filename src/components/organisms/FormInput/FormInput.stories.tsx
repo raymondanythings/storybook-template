@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Component from '.'
 
 export default {
-	title: 'Organisms/FormInput',
+	title: 'Design System/Organisms/FormInput',
 	component: Component,
 	args: {
 		type: 'person',

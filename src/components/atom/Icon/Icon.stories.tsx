@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Icons from '.'
 
 export default {
-	title: 'Atoms/Icons',
+	title: 'Design System/Atoms/Icons',
 	component: Icons,
 	args: {
 		type: 'card',

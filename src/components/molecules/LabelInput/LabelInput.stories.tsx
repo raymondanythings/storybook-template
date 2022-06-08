@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Component from '.'
 
 export default {
-	title: 'Molecules/LabelInput',
+	title: 'Design System/Molecules/LabelInput',
 	component: Component,
 	args: {
 		type: 'card',

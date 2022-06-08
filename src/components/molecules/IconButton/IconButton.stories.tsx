@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Component from '.'
 
 export default {
-	title: 'Molecules/IconButton',
+	title: 'Design System/Molecules/IconButton',
 	component: Component,
 	args: {
 		typed: 'card',

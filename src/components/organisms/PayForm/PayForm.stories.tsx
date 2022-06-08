@@ -2,9 +2,9 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Component from '.'
 import { withRouter } from 'storybook-addon-react-router-v6'
 import { useArgs } from '@storybook/client-api'
-import { useState } from 'react'
+
 export default {
-	title: 'Organisms/PayForm',
+	title: 'Design System/Organisms/PayForm',
 	component: Component,
 	decorators: [withRouter]
 } as ComponentMeta<typeof Component>
