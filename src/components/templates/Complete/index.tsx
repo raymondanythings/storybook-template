@@ -8,19 +8,20 @@ interface CompleteProps {
 const Complete = ({ charge }: CompleteProps) => {
 	const location = useLocation() as { state: { charge: boolean } }
 	const navigation = useNavigate()
-	const [ok, setOk] = useState(charge ?? location?.state?.charge)
+	const [ok, setOk] = useState(location?.state?.charge ?? charge)
 
 	const handleClick = () => {
 		navigation('/')
 	}
+
 	useEffect(() => {
-		charge && setOk(charge)
-	}, [charge, ok])
+		charge !== undefined && setOk(charge)
+	}, [ok, charge])
 
 	return (
 		<>
 			<Title>스터디모아 결재</Title>
-			{charge ? (
+			{ok ? (
 				<>
 					<p className="text-center">결제에 성공하였습니다.</p>
 				</>
